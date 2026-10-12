@@ -1,0 +1,38 @@
+s = input().lower()
+n = len(s)
+
+if n % 2 != 0:
+    left = s[:n // 2]
+    right = s[n // 2 + 1:]
+else:
+    left = s[:n // 2]
+    right = s[n // 2:]
+
+left_odd = left[0::2]
+left_even = left[1::2]
+right_odd = right[0::2]
+right_even = right[1::2]
+
+ans = True
+
+min_len1 = min(len(left_odd), len(right_even))
+for i in range(min_len1):
+    if left_odd[i] != right_even[i]:
+        ans = False
+
+min_len2 = min(len(left_even), len(right_odd))
+for i in range(min_len2):
+    if left_even[i] != right_odd[i]:
+        ans = False
+
+rem_left = left_odd[min_len1:] + left_even[min_len2:]
+rem_right = right_odd[min_len2:] + right_even[min_len1:]
+
+if len(rem_left) != len(rem_right):
+    ans = False
+else:
+    for i in range(len(rem_left)):
+        if rem_left[i] != rem_right[i]:
+            ans = False
+
+print(ans)

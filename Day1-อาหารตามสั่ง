@@ -1,0 +1,9 @@
+x = float(input())
+y = float(input())
+z = float(input())
+
+total = x + y + z
+discounted_total = total * 0.90
+per_person = discounted_total / 3
+
+print(f"ต้องจ่ายคนละ {per_person:.2f} บาท")

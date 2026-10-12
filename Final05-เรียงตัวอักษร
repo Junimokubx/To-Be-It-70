@@ -1,0 +1,4 @@
+s = input()
+letters = [ch.lower() for ch in s if ch.isalpha()]
+letters.sort()
+print("".join(letters))

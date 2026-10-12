@@ -1,0 +1,12 @@
+n = int(input())
+s = [int(input()) for _ in range(n)]
+
+count = 0
+
+for x in s:
+    if 30 <= x <= 70 or x > 125:
+        count += 1
+
+print(count)
+print(max(s))
+print(min(s))

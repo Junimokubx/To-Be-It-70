@@ -1,0 +1,4 @@
+num1 = int(input())
+num2 = float(input())
+total = num1 + num2
+print(f"{total:.2f}")

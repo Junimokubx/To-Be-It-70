@@ -1,0 +1,27 @@
+dna = int(input())
+battery = int(input())
+
+if battery < 25:
+    print("Low Battery: Need to recharge!")
+elif dna == 1:
+    print("Heatblast")
+elif dna == 2:
+    print("Wildmutt")
+elif dna == 3:
+    print("Diamondhead")
+elif dna == 4:
+    print("XLR8")
+elif dna == 5:
+    print("Grey Matter")
+elif dna == 6:
+    print("Four Arms")
+elif dna == 7:
+    print("Stinkfly")
+elif dna == 8:
+    print("Ripjaws")
+elif dna == 9:
+    print("Upgrade")
+elif dna == 10:
+    print("Ghostfreak")
+else:
+    print("DNA not found!")

@@ -1,0 +1,14 @@
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+
+x = a + b - (c * d)
+y = (a * b) + c - d
+z = a - (b * c) + d
+
+magic_power = x + y - z
+final_answer = magic_power ** 2
+
+print(magic_power)
+print(final_answer)

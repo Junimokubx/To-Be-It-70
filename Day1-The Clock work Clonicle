@@ -1,0 +1,9 @@
+days = int(input())
+half_days = int(input())
+start_hour = int(input())
+
+total_hours = (days * 24) + (half_days * 12)
+
+overlaps = (total_hours * 11) // 12
+
+print(overlaps)

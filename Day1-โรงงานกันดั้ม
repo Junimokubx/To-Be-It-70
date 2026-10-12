@@ -1,0 +1,7 @@
+n = int(input())
+
+boxes = n // 5
+remainder = n % 5
+
+print(boxes)
+print(remainder)

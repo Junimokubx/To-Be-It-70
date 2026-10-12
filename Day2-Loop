@@ -1,0 +1,22 @@
+x = int(input())
+eaten = 0
+burnt = 0
+full = False
+
+while not full:
+    n = int(input())
+    if n <= 0:
+        break
+    for _ in range(n):
+        status = input()
+        if full:
+            continue
+        if status == "burnt":
+            burnt += 1
+        elif status == "cooked":
+            eaten += 1
+            if eaten == x:
+                full = True
+
+print(f"กินได้ทั้งหมด: {eaten} ชิ้น")
+print(f"เนื้อไหม้: {burnt} ชิ้น")

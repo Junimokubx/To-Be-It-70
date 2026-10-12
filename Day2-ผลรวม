@@ -1,0 +1,19 @@
+a, b, m = map(int, input().split())
+
+if m == 0:
+    print("ERROR : ZERO")
+else:
+    start = min(a, b)
+    end = max(a, b)
+    
+    k_min = -((-start) // m)
+    k_max = end // m
+    
+    if k_min > k_max:
+        print(0, 0)
+    else:
+        count = k_max - k_min + 1
+        first_val = k_min * m
+        last_val = k_max * m
+        total_sum = count * (first_val + last_val) // 2
+        print(total_sum, count)

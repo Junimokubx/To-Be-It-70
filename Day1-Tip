@@ -1,0 +1,12 @@
+base_price = float(input())
+
+service_charge = base_price * 0.10
+vat = base_price * 0.07
+tip = base_price * 0.20
+
+grand_total = base_price + service_charge + vat + tip
+
+print(f"{service_charge:.2f}")
+print(f"{vat:.2f}")
+print(f"{tip:.2f}")
+print(f"{grand_total:.2f}")

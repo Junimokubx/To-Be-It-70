@@ -1,0 +1,14 @@
+c = int(input())
+n = int(input())
+total = 0
+skipped = 0
+
+for _ in range(n):
+    g = int(input())
+    if g <= c:
+        c -= g
+        total += g
+    else:
+        skipped += 1
+
+print(total, skipped)

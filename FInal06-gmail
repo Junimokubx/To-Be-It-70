@@ -1,0 +1,7 @@
+s = input()
+
+if s.count("@") == 1 and s.endswith("@gmail.com"):
+    name = s[:-len("@gmail.com")]
+    print(len(name) > 0 and name.isascii() and name.isalnum())
+else:
+    print(False)
